@@ -32,10 +32,10 @@ void population() {
   //
   //mouth
   mouthX1 = eye1X;
-  mouthY1 = smallerDimension*3/4;
+  mouthY1 = smallerDimension*8/10;
   mouthX2 = eye2X;
   mouthY2 = mouthY1;
-  mouthOpen = smallerDimension*1/4;
+  mouthOpen = smallerDimension*1/6;
   //
 }//End population
 //
