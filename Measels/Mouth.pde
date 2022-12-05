@@ -1,8 +1,10 @@
-color black= #000000;
-float mouthX1, mouthOpen, mouthY1, mouthX2, mouthY2;
+int mouthOpen;
+float mouthX1, mouthY1, mouthX2, mouthY2;
+//
 void mouth() {
+  int mouthWidth = int ( mouthX2 - mouthX1 ); 
+  int mouthHeight = mouthOpen;
   strokeWeight(mouthOpen);
-  fill(black);
   line(mouthX1, mouthY1, mouthX2, mouthY2);
-}//End moutht
-//End Mouth Subprogram
+  strokeWeight(reset); 
+}//End Mouth Subprogram

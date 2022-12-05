@@ -1,6 +1,9 @@
 //Global Variables
 int appWidth, appHeight;
 boolean nightMode= false;
+int reset=1;
+float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
+PImage pic;
 //
 void setup() {
   //Display & Orientation
@@ -9,14 +12,10 @@ void setup() {
   displayOrientation();//need smaller dimension(ternary operator)
   appWidth= width;
   appHeight = height;
-  
 population();
+  background_image();
   //Theme: i.e. Face (will work in portrait and landscape)
   faceSetup();
-  
- 
-
- 
   //Back Image with tint()
 }// End Setup
 //
@@ -32,12 +31,11 @@ void draw() {
 }// End draw
 //
 void keyPressed() {
-  //KeyBoard Shortcuts
-  if (key=='n' | key=='N'){ 
-    if ( nightMode=false){
-  nightMode=true;
+   if ( key=='N' | key=='n') {
+    if ( nightMode==false ) {
+      nightMode = true;
     } else {
-      nightMode= false;
+      nightMode=false;
     }
   }
 }// End Keypressed

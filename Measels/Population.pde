@@ -3,7 +3,15 @@ void population() {
   float centerX = appWidth * 1/2 ;
   float centerY = appHeight * 1/2;
   //
-  float smallerDimension;
+  //background
+   pic = loadImage("../Images/hospital.jpg");
+  backgroundImageX = appWidth*0;
+  backgroundImageY = appHeight*0;
+  backgroundImageWidth = appWidth-1;
+  backgroundImageHeight = appHeight-1;
+  //
+  //
+  int smallerDimension;
   smallerDimension = (landscape==true)? height: width; //ternary operator
   //
   rectFaceX = centerX - smallerDimension * 1/2  ;
@@ -25,17 +33,17 @@ void population() {
   //nose
   x1= centerX;
   y1= centerY - rectFaceHeight * 1/4; 
-  x2= centerX + smallerDimension * 1/7; 
-  y2= centerY + rectFaceHeight * 1/6; 
-  x3= centerX - smallerDimension * 1/7; 
-  y3= centerY + rectFaceHeight * 1/6; 
+  x2= centerX + smallerDimension * 1/9; 
+  y2= centerY + rectFaceHeight * 1/10; 
+  x3= centerX - smallerDimension * 1/9; 
+  y3= centerY + rectFaceHeight * 1/10; 
   //
   //mouth
   mouthX1 = eye1X;
-  mouthY1 = smallerDimension*8/10;
+  mouthY1 = smallerDimension*3/4;
   mouthX2 = eye2X;
   mouthY2 = mouthY1;
-  mouthOpen = smallerDimension*1/6;
+  mouthOpen = smallerDimension*1/4;
   //
 }//End population
 //

@@ -1,6 +1,5 @@
 float  measleX, measleY, measleDiameter;
 color measlesColour, resetWhite = #FFFFFF;
-
 void measlesDynamic() {
   //
   //Population code must to stay here
@@ -20,6 +19,6 @@ void measlesDynamic() {
  fill(measlesColour);
   ellipse( measleX, measleY, measleDiameter, measleDiameter);
   fill(resetWhite);
-  Stroke(reset);
+  stroke(reset);
 }// End measlesDynamic
 //End measlesDynamic Subprogram
