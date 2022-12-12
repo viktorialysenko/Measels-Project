@@ -6,13 +6,13 @@ void measlesDynamic() {
   //
   measleDiameter = random(appHeight*1/100, appHeight*1/25);
   float measleRadius = measleDiameter *1/2;
-  measleX = random(rectFaceX+measleRadius, rectFaceX + rectFaceWidth);// use smaller dimension
-  measleY= random(appHeight*0+measleRadius, appHeight-measleRadius );
+ measleX = random(rectFaceX+measleRadius, rectFaceX+rectFaceWidth-measleRadius); //use smallerDimension
+  measleY = random(appHeight*0+measleRadius, appHeight-measleRadius);
   //
   //NightMode
   measlesColour = ( nightMode==true)?  color( 170, random(0,14), 0 ) :  color( 224, random(0,23), random(110) );
  //measlesColour = color( 224, random(0,23), random(110) );
- //Pink = ( 224, 23, 110 );s
+ //Pink = ( 224, 23, 110 );
  //Dark red = (170, 14, 0 );
  //
  noStroke();
